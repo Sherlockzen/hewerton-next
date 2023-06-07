@@ -1,9 +1,12 @@
 import Image from 'next/image'
+import BtnTheme from './components/btnTheme'
+import { ProfileInfo } from './components/profileInfo'
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello World!</h1>
+    <main className=' bg-back-dark w-screen h-screen flex flex-col items-center text-white'>
+      <BtnTheme/>
+      <ProfileInfo/>
     </main>
   )
 }

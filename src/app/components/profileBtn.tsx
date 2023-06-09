@@ -9,7 +9,7 @@ export default function ProfileBtn() {
                 <img className='' src='/downloadImg.svg'/>
             </div>
         </button>
-        <button className=' btn btn-neutral w-40 normal-case'>Contate-me</button>
+        <button className=' btn btn-outline w-40 normal-case'>Contate-me</button>
     </div>
   )
 }

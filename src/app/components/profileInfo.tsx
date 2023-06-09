@@ -14,10 +14,10 @@ export const ProfileInfo = () => {
         />
       </div>
       <div className=" p-4 flex flex-col items-center md:items-start">
-        <h1 className=" text-3xl md:text-5xl text-[#F1F2F4] mb-3">
+        <h1 className=" text-3xl md:text-5xl mb-3">
           Hewerton Soares
         </h1>
-        <h3 className=" text-sm md:text-2xl text-[#A3ABB2] mb-3">
+        <h3 className=" text-sm md:text-2xl mb-3">
           Front end developer
         </h3>
 

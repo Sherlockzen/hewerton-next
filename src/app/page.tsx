@@ -11,7 +11,7 @@ export default function Home() {
   const [dark, setDark] = useState(true) //true = dark | false = light
     console.log(dark)
   return (
-    <main data-theme={dark ? 'dark' : 'winter'} className='  w-[100svw] min-h-[100svh] flex flex-col flex items-center p-8 gap-8'>
+    <main data-theme={dark ? 'dark' : 'winter'} className='  w-[100svw] min-h-[100svh] flex flex-col items-center p-8 gap-8'>
       <BtnTheme theming={() => setDark(!dark)}/>
       <ProfileInfo/>
       <ProfileFacts/>

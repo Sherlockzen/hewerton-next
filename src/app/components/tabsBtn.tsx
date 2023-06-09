@@ -9,7 +9,7 @@ export default function TabsBtn() {
   
   return (
   <>
-    <div className=" join w-full md:max-w-3xl">
+    <div className=" join w-full md:max-w-3xl bg-slate-300">
       <button
         onClick={() => setActive(true)}
         className={` btn  ${+ active ? 'btn-active' : ''} join-item normal-case w-1/2 `}

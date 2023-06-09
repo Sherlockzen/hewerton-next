@@ -4,10 +4,10 @@ function ProfileFacts() {
   return (
     <div className=' flex gap-3 text-center text-sm'>
         <p>
-            1+ Ano de experiência      
+            +1 Ano de experiência
         </p>
         <p>
-            40+ projetos no github
+            +40 projetos no github
         </p>
         <p>
             Participante do Hacktoberfest

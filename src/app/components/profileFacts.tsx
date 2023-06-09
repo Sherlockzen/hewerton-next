@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProfileFacts() {
   return (
-    <div className=' flex gap-3 text-center text-sm'>
+    <div className=' flex gap-3 text-center text-sm md:text-2xl md:max-w-xl'>
         <p>
             +1 Ano de experiência
         </p>

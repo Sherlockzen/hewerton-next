@@ -5,11 +5,10 @@ import HabilidadesContent from "@/app/components/habilidadesContent";
 
 export default function TabsBtn() {
   const [active, setActive] = useState(true)  
-  console.log(active);
   
   return (
   <>
-    <div className=" join w-full md:max-w-3xl bg-slate-300">
+    <div className=" join w-full md:max-w-3xl">
       <button
         onClick={() => setActive(true)}
         className={` btn  ${+ active ? 'btn-active' : ''} join-item normal-case w-1/2 `}

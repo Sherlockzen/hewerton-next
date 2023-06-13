@@ -1,4 +1,4 @@
-'use client'
+
 import { Articles } from '../interfaces/articles';
 import CardArticle from '../components/cardArticle';
 import Image from 'next/image';
@@ -7,7 +7,7 @@ import { useDarkTheme } from '../store/globals'
 import { useStore } from 'zustand';
 
 export default async function Page() {
-  const theme = useStore(useDarkTheme, (state) => state.theme);
+  const theme = useDarkTheme.getState().theme;
   const data = await fetch('https://dev.to/api/articles?username=danielhe4rt')
   const articles: Articles[] = await data.json()
   // console.log(articles);

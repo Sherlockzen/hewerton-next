@@ -8,7 +8,8 @@ interface ThemeState {
 }
 
 export const useDarkTheme = create<ThemeState>()(
-    devtools(
+    // devtools(
+    //     )
         persist((set) => ({
             theme: true,
             changeTheme: () => set((state) => ({ theme: !state.theme})),
@@ -17,7 +18,6 @@ export const useDarkTheme = create<ThemeState>()(
             name: 'theme-storage'
         }
         )
-    )
 )
 
 // export const useDarkTheme = create<ThemeState>((set) => ({

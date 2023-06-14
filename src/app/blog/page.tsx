@@ -1,9 +1,7 @@
 import { Articles } from "../interfaces/articles";
 import CardArticle from "../components/cardArticle";
-import Image from "next/image";
 import BtnTheme from "../components/btnTheme";
 import { useDarkTheme } from "../store/globals";
-import { useStore } from "zustand";
 import { Link } from "next/link";
 
 export default async function Page() {
@@ -17,7 +15,7 @@ export default async function Page() {
       <BtnTheme />
       <h1 className=" text-5xl">Artigos do Blog</h1>
       <div>
-        <h2 className=" text-3xl">Lista de artigos por título: </h2>
+        <h2 className=" text-3xl mb-4">Lista de artigos por título: </h2>
         <div className=" flex flex-col gap-7">
           {articles.map((article) => (
             <CardArticle

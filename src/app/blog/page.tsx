@@ -2,7 +2,7 @@ import { Articles } from "../interfaces/articles";
 import CardArticle from "../components/cardArticle";
 import BtnTheme from "../components/btnTheme";
 import { useDarkTheme } from "../store/globals";
-import { Link } from "next/link";
+import Link from "next/link";
 
 export default async function Page() {
   const theme = useDarkTheme.getState().theme;
@@ -15,14 +15,16 @@ export default async function Page() {
       <BtnTheme />
       <h1 className=" text-5xl">Artigos do Blog</h1>
       <div>
-        <h2 className=" text-3xl mb-4">Lista de artigos por título: </h2>
+        <h2 className=" text-3xl mb-4 ease-in duration-300 hover:text-5xl">Lista de artigos por título: </h2>
         <div className=" flex flex-col gap-7">
           {articles.map((article) => (
             <CardArticle
+              key={article.id}
               imgSource={article.cover_image}
               imgAlt={"Blog post cover"}
               title={article.title}
               description={article.description}
+              slug={article.slug}
             />
           ))}
         </div>

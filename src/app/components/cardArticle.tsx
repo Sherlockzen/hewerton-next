@@ -1,17 +1,19 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface cardProps {
     imgSource: string,
     imgAlt: string,
     title: string,
     description: string,
-
+    key?: number,
+    slug?: string,
 }
 
-export const CardArticle = ({ imgSource, imgAlt, title, description } : cardProps) => {
+export const CardArticle = ({ imgSource, imgAlt, title, description, key, slug } : cardProps) => {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl">
+    <div key={key} className="card lg:card-side bg-base-100 shadow-xl">
       <figure>
         {
             imgSource && 
@@ -27,7 +29,9 @@ export const CardArticle = ({ imgSource, imgAlt, title, description } : cardProp
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Ler mais</button>
+          <Link href={`/blog/${slug}`} className='btn btn-primary'>
+            Leia Mais
+          </Link>
         </div>
       </div>
     </div>

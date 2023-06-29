@@ -4,8 +4,8 @@ export default function ProfileBtn() {
   return (
     <div className=" flex gap-3">
       <a
-        href="../../../public/HewertonResume.pdf"
-        download={"HewertonResume.pdf"}
+        href="/HewertonResume.pdf"
+        download
         className=" btn btn-primary w-40 md:w-72 normal-case"
       >
         <div className=" flex items-baseline gap-2">
